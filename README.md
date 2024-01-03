@@ -11,7 +11,7 @@ This is a simple implementation of the classic Tic-Tac-Toe game with an unbeatab
 ## 🕹 How to Play
 1. Players take turns making moves by entering the position where they want to place their 'O'.
 2. The computer opponent uses the Minimax algorithm to make optimal moves.
-3. The game continues until there is a winner or a draw
+3. The game continues until there is a winner or a draw.
 
 ## ▶ Run the Game
 Simply run the provided Python script in your preferred environment:
