@@ -32,7 +32,6 @@ This implementation is based on the traditional rules of Tic-Tac-Toe and the Min
 ```sql
 Feel free to adjust the content based on your preferences or add any additional information you find relevant.
 ```
-
 ```php
 Feel free to use or modify as needed!
 ```
