@@ -18,7 +18,6 @@ Simply run the provided Python script in your preferred environment:
 
 ```bash
 python tic_tac_toe_minimax.py
-
 ```
 ## 🧠 Game Logic
 - The game uses the minimax algorithm to determine the computer's optimal moves.
