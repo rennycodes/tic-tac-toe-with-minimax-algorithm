@@ -107,7 +107,12 @@ def random_computer(board):
             board[position] = "O"
             switch_player()
 
-
+# A loop to make the game run continously
 while game_running:
     display_board(board)
     get_player_input(board)
+    tie(board)
+    check_win()
+    switch_player()
+    random_computer(board)
+    
