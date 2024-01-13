@@ -44,7 +44,7 @@ def row(board):
         return True
 
 # Checking columns
-def columns(baord):
+def column(baord):
     global winner
 
     if board[0] == board[3] == board[6] and board[0] != "-":
@@ -60,16 +60,16 @@ def columns(baord):
         return True
     
 # Checking diagonals:
-    def diagonal(board):
-        global winner
+def diagonal(board):
+    global winner
 
-        if board[0] == board[5] == board[8] and board[0] != "-":
-            winner = board[0]
-            return True
+    if board[0] == board[5] == board[8] and board[0] != "-":
+        winner = board[0]
+        return True
         
-        elif board[2] == board[5] == board[6] and board[2] != "-":
-            winner = board[2]
-            return True
+    elif board[2] == board[5] == board[6] and board[2] != "-":
+        winner = board[2]
+        return True
         
 # Checking tie
 def tie(board):
@@ -79,6 +79,16 @@ def tie(board):
         display_board(board)
         print("it's a tie")
         game_running = False
+
+# Checking for win
+def check_win():
+    global game_running
+
+    if row(board) or column(board) or diagonal(board):
+        display_board(board)
+        print(f"The winner is {winner}")
+        game_running = False
+
 
 
 while game_running:
