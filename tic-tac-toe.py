@@ -99,6 +99,13 @@ def switch_player():
     else:
         current_player = "X"
 
+# Random computer
+def random_computer(board):
+    while current_player == "O":
+        position = random.randint(0, 10)
+        if board[position] == "-":
+            board[position] = "O"
+            switch_player()
 
 
 while game_running:
