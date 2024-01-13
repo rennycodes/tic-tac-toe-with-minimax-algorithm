@@ -26,5 +26,22 @@ def get_player_input(board):
     else:
         print("Oh noo, that spot is already taken(*_*)")
 
-display_board(board)
-get_player_input(board)
+# Check for win or tie
+# Checking rows
+def row(board):
+    global winner
+    if board[0] == board[1] == board[2] and board[0] != "-":
+        winner = board[0]
+        return True
+    
+    elif board[3] == board[4] == board[5] and board[3] != "-":
+        winner = board[3]
+        return True
+    
+    elif board[6] == board[7] == board[8] and board[6] != "-":
+        winner = board[6]
+        return True
+
+while game_running:
+    display_board(board)
+    get_player_input(board)
