@@ -59,6 +59,18 @@ def columns(baord):
         winner = board[2]
         return True
     
+# Checking diagonals:
+    def diagonal(board):
+        global winner
+        if board[0] == board[5] == board[8] and board[0] != "-":
+            winner = board[0]
+            return True
+        
+        elif board[2] == board[5] == board[6] and board[2] != "-":
+            winner = board[2]
+            return True
+        
+        
 while game_running:
     display_board(board)
     get_player_input(board)
