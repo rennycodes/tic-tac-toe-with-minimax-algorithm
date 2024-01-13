@@ -89,6 +89,16 @@ def check_win():
         print(f"The winner is {winner}")
         game_running = False
 
+# Switch player
+def switch_player():
+    global current_player
+
+    if current_player == "X":
+        current_player = "O"
+
+    else:
+        current_player = "X"
+
 
 
 while game_running:
