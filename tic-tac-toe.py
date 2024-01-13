@@ -62,6 +62,7 @@ def columns(baord):
 # Checking diagonals:
     def diagonal(board):
         global winner
+
         if board[0] == board[5] == board[8] and board[0] != "-":
             winner = board[0]
             return True
@@ -70,7 +71,16 @@ def columns(baord):
             winner = board[2]
             return True
         
-        
+# Checking tie
+def tie(board):
+    global winner
+
+    if "-" not in board:
+        display_board(board)
+        print("it's a tie")
+        game_running = False
+
+
 while game_running:
     display_board(board)
     get_player_input(board)
