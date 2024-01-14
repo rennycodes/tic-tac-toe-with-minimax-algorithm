@@ -37,11 +37,15 @@ def check_win(board):
         if board[i] == board[i + 3] == board[i + 6] and board[i] != "-":
             winner = board[i]
             game_running = False
+            display_board(board)
+            print(f"The winner is {board[i]}")
             return True  # Game won
 
         if board[i * 3] == board[i * 3 + 1] == board[i * 3 + 2] and board[i * 3] != "-":
             winner = board[i * 3]
             game_running = False
+            display_board(board)
+            print(f"The winner is {board[i * 3]}")
             return True  # Game won
 
     if board[0] == board[4] == board[8] and board[0] != "-":
