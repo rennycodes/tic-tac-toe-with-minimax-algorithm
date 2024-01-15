@@ -136,9 +136,12 @@ def random_computer(board):
 while game_running:
     display_board(board)
     get_player_input(board)
+    
     if not game_running:
         break
-    random_computer(board)
-    if not game_running:
+
+    # Check if the game is over after the players move
+    if game_over(board):
         break
-    game_running = not check_win(board)
+    
+
