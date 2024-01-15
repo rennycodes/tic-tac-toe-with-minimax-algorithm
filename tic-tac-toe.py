@@ -85,14 +85,13 @@ def make_move(board, move, maximizing_player):
     return board
 
 
+
 # Switch player
 def switch_player():
     global current_player
 
-    if current_player == "X":
-        current_player = "O"
-    else:
-        current_player = "X"
+    current_player = "O" if current_player == "X" else "X"
+    
 
 # Random computer
 def random_computer(board):
