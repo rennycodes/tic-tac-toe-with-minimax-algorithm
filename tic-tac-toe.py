@@ -78,6 +78,12 @@ def game_over(board):
 def possible_moves(board):
     return[i + 1 for i in range(9) if board[i] == "-"]
 
+# Make move on board
+def make_move(board, move, maximizing_player):
+    player = "X" if maximizing_player else "O"
+    board[move - 1] = player
+    return board
+
 
 # Switch player
 def switch_player():
