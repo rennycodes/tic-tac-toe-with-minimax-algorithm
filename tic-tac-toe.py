@@ -137,6 +137,7 @@ def random_computer(board):
             switch_player()
 
 # A loop to make the game run continuously
+"""
 while game_running:
     display_board(board)
     get_player_input(board)
@@ -149,3 +150,5 @@ while game_running:
         break
     
 
+"""
+game_over(board)
