@@ -84,8 +84,6 @@ def make_move(board, move, maximizing_player):
     board[move - 1] = player
     return board
 
-
-
 # Switch player
 def switch_player():
     global current_player
@@ -99,6 +97,19 @@ def minimax(board, depth, maximizing_player):
             return -1 if maximizing_player else 1
         else:
             return 0
+    
+    if maximizing_player:
+        max_eval = float('-inf')
+        for move in possible_moves(board):
+            eval = minimax(make_move(board, move, maximizing_player), depth - 1, False)
+            max_eval = max(max_eval, eval)
+        return max_eval
+    else:
+        min_eval = float('inf')
+        for move in possible_moves(board):
+            eval = minimax(make_move(board, move, maximizing_player), depth -1, True)
+            min_eval = min(min_eval, eval)
+        return min_eval
 
 # Random computer
 def random_computer(board):
