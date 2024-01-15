@@ -91,7 +91,7 @@ def switch_player():
     global current_player
 
     current_player = "O" if current_player == "X" else "X"
-    
+
 
 # Random computer
 def random_computer(board):
