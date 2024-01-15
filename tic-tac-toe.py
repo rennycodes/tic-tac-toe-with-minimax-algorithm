@@ -139,7 +139,7 @@ while game_running:
     
     if not game_running:
         break
-
+    
     # Check if the game is over after the players move
     if game_over(board):
         break
