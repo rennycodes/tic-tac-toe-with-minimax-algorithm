@@ -1,4 +1,3 @@
-
 # Variables
 game_running = True
 winner = None
