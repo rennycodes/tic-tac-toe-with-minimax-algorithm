@@ -34,6 +34,7 @@ def check_win(board):
 
     # Check rows, columns, and diagonals
     for i in range(3):
+        # Rows
         if board[i] == board[i + 3] == board[i + 6] and board[i] != "-":
             winner = board[i]
             game_running = False
