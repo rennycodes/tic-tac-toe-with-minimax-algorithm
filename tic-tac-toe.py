@@ -70,6 +70,10 @@ def check_win(board):
 
     return False  # Game still running
 
+# Check if the game is over
+def game_over(board):
+    return check_win(board) or "-" not in board
+
 # Switch player
 def switch_player():
     global current_player
