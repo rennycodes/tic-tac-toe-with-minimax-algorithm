@@ -1,4 +1,3 @@
-import random
 
 # Variables
 game_running = True
