@@ -50,6 +50,7 @@ def check_win(board):
             print(f"The winner is {winner}")
             return True  # Game won
 
+    # Diagonals
     if board[0] == board[4] == board[8] and board[0] != "-":
         winner = board[0]
         game_running = False
