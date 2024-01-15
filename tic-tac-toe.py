@@ -65,6 +65,7 @@ def check_win(board):
         print(f"The winner is {winner}")
         return True  # Game won
 
+    # Tie
     if "-" not in board:
         display_board(board)
         print("It's a tie")
