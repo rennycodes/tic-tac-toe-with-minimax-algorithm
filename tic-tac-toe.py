@@ -92,6 +92,13 @@ def switch_player():
 
     current_player = "O" if current_player == "X" else "X"
 
+# Implementing the minimax algorithm
+def minimax(board, depth, maximizing_player):
+    if game_over(board) or depth == 0:
+        if check_win(board):
+            return -1 if maximizing_player else 1
+        else:
+            return 0
 
 # Random computer
 def random_computer(board):
