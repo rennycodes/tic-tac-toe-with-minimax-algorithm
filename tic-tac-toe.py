@@ -1,9 +1,3 @@
-# Variables
-game_running = True
-winner = None
-current_player = "X"
-move = None
-
 # Creating the game board
 board = {1: ' ', 2: ' ', 3: ' ',
          4: ' ', 5: ' ', 6: ' ',
