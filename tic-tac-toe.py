@@ -134,7 +134,7 @@ def make_best_move(board):
 # Random computer
 def random_computer(board):
     while current_player == "O":
-        position = make_best_move(board)
+        position = make_move(board)
         if board[position] == "-":
             board[position] = "O"
             switch_player()
