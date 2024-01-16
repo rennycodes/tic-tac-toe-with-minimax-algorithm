@@ -4,6 +4,7 @@ import random
 game_running = True
 winner = None
 current_player = "X"
+move = None
 
 # Creating the game board
 board = ['-', '-', '-',
@@ -83,7 +84,9 @@ def possible_moves(board):
     return[i + 1 for i in range(9) if board[i] == "-"]
 
 # Make move on board
-def make_move(board, move, maximizing_player):
+def make_move(board, test, maximizing_player):
+    global move
+    move = test
     move = possible_moves(board)
     player = "X" if maximizing_player else "O"
     for m in move:
@@ -133,8 +136,9 @@ def make_best_move(board):
 
 # Random computer
 def random_computer(board):
+    global move
     while current_player == "O":
-        position = make_move(board)
+        position = make_move(board, move, True)
         if board[position] == "-":
             board[position] = "O"
             switch_player()
