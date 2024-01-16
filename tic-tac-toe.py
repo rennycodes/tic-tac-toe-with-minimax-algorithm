@@ -84,8 +84,11 @@ def possible_moves(board):
 
 # Make move on board
 def make_move(board, move, maximizing_player):
+    move = possible_moves(board)
     player = "X" if maximizing_player else "O"
-    board[move - 1] = player
+    for m in move:
+
+        board[m - 1] = player
     return board
 
 # Switch player
@@ -131,7 +134,7 @@ def make_best_move(board):
 # Random computer
 def random_computer(board):
     while current_player == "O":
-        position = random.randint(0, 8)
+        position = make_move(board, possible_moves, True)
         if board[position] == "-":
             board[position] = "O"
             switch_player()
@@ -142,6 +145,7 @@ while game_running:
     display_board(board)
     get_player_input(board)
     game_over(board)
+    random_computer(board)
 """
     if not game_running:
         break
