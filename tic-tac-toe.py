@@ -11,6 +11,8 @@ def display_board(board):
     print("--+---+--")
     print(board[7] + " | " + board[8] + " | " + board[9])
 display_board(board)
+...
+
 
 # # Getting player input
 # def get_player_input(board):
