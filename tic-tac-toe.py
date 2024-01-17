@@ -48,15 +48,7 @@ def check_win():
 
 
 
-#     # Check rows, columns, and diagonals
-#     for i in range(3):
-#         # Rows
-#         if board[i] == board[i + 3] == board[i + 6] and board[i] != "-":
-#             winner = board[i]
-#             game_running = False
-#             display_board(board)
-#             print(f"The winner is {winner}")
-#             return True  # Game won
+
         
 #         # Columns
 #         if board[i * 3] == board[i * 3 + 1] == board[i * 3 + 2] and board[i * 3] != "-":
