@@ -56,11 +56,6 @@ def check_win():
 
 
 
-
-# # Check if the game is over
-# def game_over(board):
-#     return check_win(board) or "-" not in board
-
 # # Getting a list of possible moves(empty spaces) on board
 # def possible_moves(board):
 #     return[i + 1 for i in range(9) if board[i] == "-"]
