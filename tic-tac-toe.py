@@ -44,14 +44,7 @@ def check_win():
 
 
 
-# # Getting player input
-# def get_player_input(board):
-#     usr_inp = int(input("Choose a board space 1-9: "))
-#     if usr_inp >= 1 and usr_inp <= 9 and board[usr_inp-1] == "-":
-#         board[usr_inp-1] = current_player
-#         switch_player()
-#     else:
-#         print("Oh noo, that spot is already taken (*_*)")
+
 
 # # Check for win or tie
 # # Checking rows, columns, and diagonals in a single function
