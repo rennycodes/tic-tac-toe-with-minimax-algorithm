@@ -52,14 +52,8 @@ def check_win():
 
 
 
-#     if board[2] == board[4] == board[6] and board[2] != "-":
-#         winner = board[2]
-#         game_running = False
-#         display_board(board)
-#         print(f"The winner is {winner}")
-#         return True  # Game won
 
-#     # Tie
+
 #     if "-" not in board:
 #         display_board(board)
 #         print("It's a tie")
