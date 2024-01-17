@@ -11,7 +11,10 @@ def display_board(board):
     print("--+---+--")
     print(board[7] + " | " + board[8] + " | " + board[9])
 
-
+def  space_is_free(position):
+    if board[position] == ' ':
+        return True
+    return False
 
 
 # # Getting player input
