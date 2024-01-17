@@ -71,6 +71,34 @@ def check_win():
     else:
         return False
 
+def check_which_spot_wins(spot):
+    if (board[1] == board[2] and board[1] == board[3] and board[1] == spot):
+        return True
+    
+    elif (board[4] == board[5] and board[4] == board[6] and board[4] == spot):
+        return True
+    
+    elif (board[7] == board[8] and board[7] == board[9] and board[7] == spot):
+        return True
+    
+    elif (board[1] == board[4] and board[1] == board[7] and board[1] == spot):
+        return True
+    
+    elif (board[2] == board[5] and board[2] == board[8] and board[2] == spot):
+        return True
+
+    elif (board[3] == board[6] and board[3] == board[9] and board[3] == spot):
+        return True
+
+    elif (board[1] == board[5] and board[1] == board[9] and board[1] == spot):
+        return True
+
+    elif (board[3] == board[5] and board[3] == board[7] and board[3] == spot):
+        return True
+
+    else:
+        return False
+
 def check_draw():
     for key in board.keys():
         if board[key] == ' ':
