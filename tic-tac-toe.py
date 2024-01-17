@@ -24,6 +24,14 @@ def insert_letter(letter, position):
         if check_draw():
             print("Draw!")
             exit()
+        
+        if check_win():
+            if letter == 'X':
+                print("Bot wins!")
+            else:
+                print("player wins!")
+                exit()
+        return
     
 
 
