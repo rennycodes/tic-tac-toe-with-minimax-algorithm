@@ -49,14 +49,7 @@ def check_win():
 
 
 
-        
-#         # Columns
-#         if board[i * 3] == board[i * 3 + 1] == board[i * 3 + 2] and board[i * 3] != "-":
-#             winner = board[i * 3]
-#             game_running = False
-#             display_board(board)
-#             print(f"The winner is {winner}")
-#             return True  # Game won
+
 
 #     # Diagonals
 #     if board[0] == board[4] == board[8] and board[0] != "-":
