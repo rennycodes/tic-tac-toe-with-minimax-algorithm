@@ -1,3 +1,6 @@
+player = 'O'
+computer = 'X'
+
 # Creating the game board
 board = {1: ' ', 2: ' ', 3: ' ',
          4: ' ', 5: ' ', 6: ' ',
@@ -64,11 +67,19 @@ def check_win():
     elif (board[3] == board[5] and board[3] == board[7] and board[3] != ' '):
         return True
 
-    return False
+    else:
+        return False
 
+def check_draw():
+    for key in board.keys():
+        if board[key] == ' ':
+            return False
+    return True
 
-
-
+def player_move():
+    position = int(input("Enter a position for 'O": ))
+    insert_letter(player, position)
+    return
 
 
 
