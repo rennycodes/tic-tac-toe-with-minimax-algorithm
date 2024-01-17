@@ -16,6 +16,11 @@ def  space_is_free(position):
         return True
     return False
 
+def insert_letter(letter, position):
+    if space_is_free(position):
+        board[position] = letter
+        display_board(board)
+
 
 # # Getting player input
 # def get_player_input(board):
