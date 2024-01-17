@@ -36,6 +36,8 @@ def insert_letter(letter, position):
     else:
         print("Invalid position")
         position = int(input("Please enter a new position: "))
+        insert_letter(letter, position)
+        return
 
 
 
