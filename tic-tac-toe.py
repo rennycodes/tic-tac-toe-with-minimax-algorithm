@@ -54,13 +54,8 @@ def check_win():
 
 
 
-#     if "-" not in board:
-#         display_board(board)
-#         print("It's a tie")
-#         game_running = False
-#         return True  # Tie
 
-#     return False  # Game still running
+
 
 # # Check if the game is over
 # def game_over(board):
