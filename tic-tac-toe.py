@@ -21,6 +21,12 @@ def insert_letter(letter, position):
         board[position] = letter
         display_board(board)
 
+        if check_draw():
+            print("Draw!")
+            exit()
+    
+
+
 
 # # Getting player input
 # def get_player_input(board):
