@@ -125,6 +125,37 @@ def computer_move():
     insert_letter(computer, best_move)
     return
 
+def minimax(board, maximizing):
+    if check_which_spot_wins(computer):
+        return 1
+    
+    elif check_which_spot_wins(player):
+        return -1
+    
+    elif check_draw():
+        return 0
+    
+    if maximizing:
+        best_score = -800
+        for key in board.keys():
+            if board[key] == ' ':
+                board[key] = computer
+                score = minimax(board, False)
+                board[key] = ' '
+                if score > best_score:
+                    best_score = score
+        return best_score
+    else:
+        best_score = 800
+        for key in board.keys():
+            if board[key] == ' ':
+                board[key] = player
+                score = minimax(board, True)
+                board[key] = ' '
+                if score < best_score:
+                    best_score = score
+            return best_score
+
 while not check_win():
     computer_move()
     player_move()
