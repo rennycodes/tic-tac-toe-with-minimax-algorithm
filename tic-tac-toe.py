@@ -77,10 +77,14 @@ def check_draw():
     return True
 
 def player_move():
-    position = int(input("Enter a position for 'O": ))
+    position = int(input("Enter a position for 'O': "))
     insert_letter(player, position)
     return
 
+def computer_move():
+    position = int(input("Enter a position for 'X': "))
+    insert_letter(computer, position)
+    return
 
 
 
