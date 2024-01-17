@@ -31,6 +31,7 @@ def insert_letter(letter, position):
         if check_win():
             if letter == 'X':
                 print("Bot wins!")
+                exit()
             else:
                 print("Player wins!")
                 exit()
@@ -85,6 +86,10 @@ def computer_move():
     position = int(input("Enter a position for 'X': "))
     insert_letter(computer, position)
     return
+
+while not check_win():
+    computer_move()
+    player_move()
 
 
 
