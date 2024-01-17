@@ -29,7 +29,7 @@ def insert_letter(letter, position):
             if letter == 'X':
                 print("Bot wins!")
             else:
-                print("player wins!")
+                print("Player wins!")
                 exit()
         return
     
