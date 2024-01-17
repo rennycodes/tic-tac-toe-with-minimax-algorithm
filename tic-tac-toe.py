@@ -33,6 +33,8 @@ def insert_letter(letter, position):
                 exit()
         return
     
+    else:
+        print("Invalid position")
 
 
 
