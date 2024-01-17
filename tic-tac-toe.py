@@ -46,10 +46,7 @@ def check_win():
 
 
 
-# # Check for win or tie
-# # Checking rows, columns, and diagonals in a single function
-# def check_win(board):
-#     global game_running, winner
+
 
 #     # Check rows, columns, and diagonals
 #     for i in range(3):
