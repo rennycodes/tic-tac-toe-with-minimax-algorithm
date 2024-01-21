@@ -174,11 +174,7 @@ while not check_win():
 
 
 
-#     for move in possible_moves(board):
-#         eval = minimax(make_move(board, move, True), depth = 2, maximizing_player = False)
-#         if eval > max_eval:
-#             max_eval = eval
-#             best_move = move
+
     
 #     return best_move
 
