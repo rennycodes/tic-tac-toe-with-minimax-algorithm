@@ -165,11 +165,7 @@ while not check_win():
 
 
 
-# # Make move on board
-# def make_move(board, test, maximizing_player):
-#     global move
-#     move = test
-#     move = possible_moves(board)
+
 #     player = "X" if maximizing_player else "O"
 #     for m in move:
 
