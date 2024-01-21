@@ -181,9 +181,7 @@ while not check_win():
 
 
 
-# while game_running:
-#     display_board(board)
-#     get_player_input(board)
+
 #     game_over(board)
 #     random_computer(board)
 # """
