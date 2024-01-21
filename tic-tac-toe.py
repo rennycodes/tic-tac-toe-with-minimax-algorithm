@@ -178,8 +178,6 @@ while not check_win():
     
 
 
-#             board[position] = "O"
-#             switch_player()
 
 # # A loop to make the game run continuously
 
