@@ -177,9 +177,7 @@ while not check_win():
 
     
 
-#     while current_player == "O":
-#         position = make_move(board, move, True)
-#         if board[position] == "-":
+
 #             board[position] = "O"
 #             switch_player()
 
