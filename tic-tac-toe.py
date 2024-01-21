@@ -171,12 +171,7 @@ while not check_win():
 
 
     
-#     if maximizing_player:
-#         max_eval = float('-inf')
-#         for move in possible_moves(board):
-#             eval = minimax(make_move(board, move, maximizing_player), depth - 1, False)
-#             max_eval = max(max_eval, eval)
-#         return max_eval
+
 #     else:
 #         min_eval = float('inf')
 #         for move in possible_moves(board):
