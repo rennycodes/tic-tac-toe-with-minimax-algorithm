@@ -167,8 +167,6 @@ while not check_win():
 
 
 
-#         board[m - 1] = player
-#     return board
 
 # # Switch player
 # def switch_player():
