@@ -166,8 +166,6 @@ while not check_win():
 
 
 
-#     player = "X" if maximizing_player else "O"
-#     for m in move:
 
 #         board[m - 1] = player
 #     return board
