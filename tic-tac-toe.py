@@ -179,7 +179,7 @@ while not check_win():
 
 
 
-# # A loop to make the game run continuously
+
 
 # while game_running:
 #     display_board(board)
