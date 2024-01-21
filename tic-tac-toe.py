@@ -184,9 +184,7 @@ while not check_win():
 
 
     
-#     # Check if the game is over after the players move
-#     if game_over(board):
-#         break
+
     
 
 # """
