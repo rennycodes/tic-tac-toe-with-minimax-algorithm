@@ -182,9 +182,7 @@ while not check_win():
 
 
 
-#     game_over(board)
-#     random_computer(board)
-# """
+
 #     if not game_running:
 #         break
     
