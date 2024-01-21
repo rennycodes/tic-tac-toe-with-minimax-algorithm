@@ -163,9 +163,7 @@ while not check_win():
 
 
 
-# # Getting a list of possible moves(empty spaces) on board
-# def possible_moves(board):
-#     return[i + 1 for i in range(9) if board[i] == "-"]
+
 
 # # Make move on board
 # def make_move(board, test, maximizing_player):
