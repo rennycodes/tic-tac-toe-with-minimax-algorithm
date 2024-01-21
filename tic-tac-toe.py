@@ -172,12 +172,6 @@ while not check_win():
 
     
 
-#     else:
-#         min_eval = float('inf')
-#         for move in possible_moves(board):
-#             eval = minimax(make_move(board, move, maximizing_player), depth -1, True)
-#             min_eval = min(min_eval, eval)
-#         return min_eval
 
 # # Making the best move
 # def make_best_move(board):
