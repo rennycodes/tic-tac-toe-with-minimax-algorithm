@@ -176,11 +176,7 @@ while not check_win():
 
 
     
-#     return best_move
 
-# # Random computer
-# def random_computer(board):
-#     global move
 #     while current_player == "O":
 #         position = make_move(board, move, True)
 #         if board[position] == "-":
