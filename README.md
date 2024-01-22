@@ -8,7 +8,7 @@ This is a simple implementation of the classic Tic-Tac-Toe game with an unbeatab
 - The player is represented by 'O', and the computer opponent is represented by 'X'.
 - The game board is represented by a dictionary where each key corresponds to a position on the board (1-9).
 
-## How to Play
+## 🕹 How to Play
 1. Players take turns making moves by entering the position where they want to place their 'O'.
 2. The computer opponent uses the Minimax algorithm to make optimal moves.
 3. The game continues until there is a winner or a draw
