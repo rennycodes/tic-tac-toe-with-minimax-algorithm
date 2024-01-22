@@ -28,3 +28,7 @@ Feel free to modify the code to enhance the game or integrate it into a larger p
 
 ## Acknowledgments
 This implementation is based on the traditional rules of Tic-Tac-Toe and the Minimax algorithm for optimal decision-making by the computer opponent.
+
+```sql
+Feel free to adjust the content based on your preferences or add any additional information you find relevant.
+```
