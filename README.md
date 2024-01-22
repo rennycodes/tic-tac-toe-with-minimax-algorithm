@@ -25,3 +25,6 @@ python tic_tac_toe_minimax.py
 
 ## Customization
 Feel free to modify the code to enhance the game or integrate it into a larger project. You can explore adding a graphical interface or expanding the game's features.
+
+## Acknowledgments
+This implementation is based on the traditional rules of Tic-Tac-Toe and the Minimax algorithm for optimal decision-making by the computer opponent.
