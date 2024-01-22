@@ -13,7 +13,7 @@ This is a simple implementation of the classic Tic-Tac-Toe game with an unbeatab
 2. The computer opponent uses the Minimax algorithm to make optimal moves.
 3. The game continues until there is a winner or a draw
 
-## Run the Game
+## ▶ Run the Game
 Simply run the provided Python script in your preferred environment:
 
 ```bash
