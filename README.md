@@ -22,3 +22,6 @@ python tic_tac_toe_minimax.py
 ## Game Logic
 - The game uses the minimax algorithm to determine the computer's optimal moves.
 - The `minimax` function recursively evaluates possible future moves to find the best move for both the player and the computer.
+
+## Customization
+Feel free to modify the code to enhance the game or integrate it into a larger project. You can explore adding a graphical interface or expanding the game's features.
